@@ -1,117 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Mi Portafolio Personal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
 </head>
+
 <body>
-
     <header>
-        <h1>Mi Portafolio</h1>
-    </header>
+        <nav>
+            <div class="menu">
+                <div class="logo">Proyecto</div>
+                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
-    <nav>
-        <ul>
-            <li><a href="#sobre-mi">Sobre mí</a></li>
-            <li><a href="#tarjetas">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
-
-    <main>
-
-        <!-- SECCIÓN SOBRE MÍ -->
-       
-        <section id="sobre-mi">
-            <h2>Sobre mí</h2>
-            <p>
-                Soy estudiante de la Tecnicatura Superior en Desarrollo de Software a distancia del IFTS N° 29, apasionado por el desarrollo web.
-                Me interesa aprender nuevas tecnologías y crear soluciones digitales.
-                Mi objetivo es convertirme en desarrollador full stack.
-            </p>
-            <img src="/img/MCR.png" alt="Imagen de perfil">
-        </section>
-
-        <!-- SECCIÓN TARJETAS -->
-        
-        <section id="tarjetas">
-            <h2>Proyectos</h2>
-            <div class="contenedor-tarjetas">
-                
-                <div class="tarjeta">
-                    <img src="/img/Yo_y_el_mar.jpeg" alt="Viaje a Mar del Plata">
-                    <h3>Viaje a Mar del Plata</h3>
-                    <p>El enigma de la playa en Mar del Plata</p>
-                </div>
-
-                <div class="tarjeta">
-                    <img src="/img/Nosotros.jpeg" alt="Recorriendo Buenos Aires">
-                    <h3>Recorriendo Buenos Aires</h3>
-                    <p>Recorriendo Buenos Aires y sus maravillas.</p>
-                </div>
-
+                <ul class="menu-links" id="menuLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicio">Servicio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                </ul>
             </div>
-        </section>
+        </nav>  
+</header>
 
-        <!-- SECCIÓN HABILIDADES -->
-        <section id="habilidades">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Aprendiendo React</li>
-            </ul>
-        </section>
+<main>
+    <section id="inicio">
+        <h1>Bienvenidos</h1>
+    </section>
+    <section id="servicio">
+        <h1>servicio</h1>
+    </section>
+    <section id="contacto">
+        <h1>contacto</h1>
+    </section>
+</main>
 
-        <!-- SECCIÓN CONTACTO -->
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <form>
-                <input type="text" placeholder="Nombre" required>
-                <input type="text" placeholder="Apellido" required>
-                <input type="email" placeholder="Email" required>
-                <input type="tel" placeholder="Teléfono" required>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-
-        <!-- SECCIÓN PELÍCULAS -->
-        
-        <section id="peliculas">
-            <h2>Películas Favoritas</h2>
-
-            <div class="pelicula">
-                <h3>Titanic</h3>
-                <img src="/img/titanic.jpg" alt="Titanic">
-                <p>Titanic (1997) es una obra maestra del cine épico que fusiona magistralmente un romance prohibido con una de las tragedias más impactantes de la historia. Dirigida por James Cameron, la película destaca por un despliegue técnico sin precedentes, una química inolvidable entre Leonardo DiCaprio y Kate Winslet, y una banda sonora icónica que eleva su drama a una escala universal. Más que un filme de desastres, es una experiencia cinematográfica inmersiva que explora la lucha por la libertad personal frente a las barreras sociales, consolidándose como un clásico esencial que logra conmover profundamente a cualquier audiencia.</p>
-            </div>
-
-            <div class="pelicula">
-                <h3>Cazafantasmas</h3>
-                <img src="/img/cazafantasmas.jpg" alt="Cazafantasmas">
-                <p>Cazafantasmas (1984) es una de las comedias sobrenaturales más icónicas de la historia, logrando un equilibrio perfecto entre humor irreverente, efectos especiales creativos y una atmósfera única en el Nueva York de los ochenta. Dirigida por Ivan Reitman y protagonizada por un elenco estelar liderado por Bill Murray, la trama sigue a un grupo de parapsicólogos expulsados de la universidad que deciden emprender un negocio peculiar para capturar espectros, enfrentándose finalmente a una amenaza apocalíptica que pone a prueba su valentía. Con su guion ingenioso, personajes memorables y un tema musical inolvidable, esta cinta se convirtió en un fenómeno cultural imbatible que definió el género de la comedia de aventuras y mantiene vigente su encanto nostálgico décadas después de su estreno.</p>
-            </div>
-
-            <div class="pelicula">
-                <h3>The Matrix</h3>
-                <img src="/img/matrix.webp" alt="Matrix">
-                <p>Matrix (1999) es un hito revolucionario de la ciencia ficción que redefinió el cine de acción mediante una estética visual innovadora y un guion filosófico profundo. Dirigida por las hermanas Wachowski, la historia sigue a Neo, un hacker que descubre que la realidad es una simulación creada por máquinas para esclavizar a la humanidad, sumergiéndolo en una guerra cibernética cargada de dilemas sobre la libertad y la percepción. Gracias a su icónico "bullet time", efectos visuales vanguardistas y una atmósfera ciberpunk impecable, la película no solo marcó un antes y un después en la técnica cinematográfica, sino que también se consolidó como un referente cultural sobre la búsqueda de la verdad en un mundo controlado.</p>
-            </div>
-
-        </section>
-
-    </main>
-
-    
-    <footer>
-        <p>© 2026 - Mi Portafolio - Maximiliano Carlos Ratti</p>
-    </footer>
-
+    <script src="js/menu.js"></script>
 </body>
 </html>
