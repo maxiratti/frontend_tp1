@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Maximiliano Ratti</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/maxi.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>Maximiliano Ratti</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#sobre">Sobre mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#gustos">Gustos</a>
+    </nav>
+</header>
+
+<!-- CARD PRINCIPAL -->
+<section class="card perfil" id="sobre">
+    <img src="img/media-maxi/Yo Cyborg.png" alt="Maxi">
+    
+    <div>
+        <h2>Sobre mí</h2>
+        <p>
+            Profesor de computación en Tucumán y estudiante de Desarrollo de Software.
+            Apasionado por la tecnología, la educación y la robótica.
+        </p>
+        <p><strong>Edad:</strong> (completar)</p>
+        <p><strong>Ciudad:</strong> San Miguel de Tucumán</p>
+
+        <button onclick="saludo()">Saludar 👋</button>
+    </div>
+</section>
+
+<!-- HABILIDADES -->
+<section id="habilidades">
+    <h2 class="titulo">Habilidades</h2>
+
+    <div class="grid">
+        <div class="card mini">HTML</div>
+        <div class="card mini">CSS</div>
+        <div class="card mini">JavaScript</div>
+        <div class="card mini">C# .NET</div>
+        <div class="card mini">Arduino</div>
+        <div class="card mini">React (básico)</div>
+    </div>
+</section>
+
+<!-- GUSTOS -->
+<section id="gustos">
+    <h2 class="titulo">Mis gustos</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>🎬 Películas</h3>
+            <ul>
+                <li>Interestelar</li>
+                <li>Matrix</li>
+                <li>El juego de la imitación</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>🎵 Música</h3>
+            <ul>
+                <li>Daft Punk</li>
+                <li>AC/DC</li>
+                <li>Eminem</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
