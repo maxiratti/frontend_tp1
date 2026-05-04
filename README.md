@@ -107,6 +107,19 @@ Se aplicaron efectos *hover* en tarjetas para mejorar la interacción visual del
 
 ---
 
+### 🖱 Javascript 
+
+* ```js
+// script_ivanna.js
+
+flipCard() // Al hacer click en cualquier lugar de la tarjeta, esta realiza una animación de "voltearse" para revelar el contenido que había detrás de ella. Varía indefinidamente entre las posiciones del frente y el dorso de dicha tarjeta.
+updateButtonIcon() // Identifica cuál botón se encuentra activo entre dos opciones: "play" o "pause", cosa que al hacerle click, se cambie al otro. Se utiliza junto al "addEventListener" para el id "audio".
+Evento "load" // Genera autoplay en caso de que no se encuentre bloqueado por el navegador. En caso contrario, el audio permanece en pausa.
+Evento "click" // Alterna entre "play" y "pause", con un pequeño añadido que evita que se active el "flipCard()" al hacerle click.
+```
+
+--
+
 ## 🧠 Conclusión
 
 Este proyecto permitió aplicar conceptos fundamentales de desarrollo web, como la organización de archivos, trabajo en equipo con Git, diseño responsive y buenas prácticas de programación.
