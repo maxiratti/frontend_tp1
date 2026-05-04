@@ -1,6 +1,6 @@
-# Portafolio Personal
+# Trabajo Práctico N° 1
 
-Este proyecto corresponde a la Práctica Formativa Obligatoria 1. Consiste en una landing page desarrollada con HTML y CSS.
+Este proyecto corresponde al Trabajo ráctico N° 1 de la materia Front End. Consiste en una landing page desarrollada con HTML, CSS y JavaScript.
 
 ## Checklist
 
