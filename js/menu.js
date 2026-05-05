@@ -45,3 +45,10 @@ document.querySelectorAll("#menuLinks a").forEach(link => {
         menuLinks.classList.remove("show");
     });
 });
+
+const menuToggle = document.getElementById("menuToggle");
+const menuLinks = document.getElementById("menuLinks");
+
+menuToggle.addEventListener("click", () => {
+    menuLinks.classList.toggle("show");
+});
