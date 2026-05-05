@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/navbar.css">
     <title>Portfolio</title>
@@ -14,80 +18,157 @@
 <body>
     <header class="header">
         <nav class="nav container">
-
             <div class="logo">DevStars 🚀</div>
 
             <ul class="nav-links" id="menuLinks">
                 <li><a href="#inicio" class="active">Inicio</a></li>
                 <li><a href="#proyecto">Proyecto</a></li>
+                <li><a href="#servicio">Servicio</a></li>
                 <li><a href="#integrantes">Integrantes</a></li>
                 <li><a href="pages/bitacora.html">Bitacora</a></li>
-                </ul>
-            
-        </nav>  
+            </ul>
+
+        </nav>
     </header>
 
-<main>
-    <section id="inicio">
-        <h1>Bienvenidos</h1>
-        <button onclick="mostrarBienvenida()">Saludar</button>
-    </section>
-    <section id="proyecto">
-        <h1>Proyecto</h1>
-        <p>DevStars es una agencia web ficticia creada como parte de un trabajo práctico grupal. Nuestro objetivo es diseñar y desarrollar una página web moderna, responsive y estructurada aplicando buenas prácticas de desarrollo frontend.</p>
-    </section>
+    <main>
+        <section id="inicio">
+            <h1>Bienvenidos</h1>
+            <p>
+                Bienvenidos a <strong>DevStars 🚀</strong>, una agencia web ficticia creada como parte de nuestro
+                Trabajo Práctico Grupal.
+                Este proyecto refleja nuestro aprendizaje en desarrollo frontend, donde aplicamos buenas prácticas
+                utilizando
+                HTML, CSS y JavaScript.
 
-    <section id="integrantes">
-        <h1 class="seccion-titulo">Integrantes</h1>
-            <p class="seccion-subtitulo">Somos cuatro estudiantes de la Tecnicatura Superior en Desarrollo de Software del IFTS N.°29, Buenos Aires. La presente pagina es nuestro primer proyecto en equipo. Detrás de cada sección hay cuatro perspectivas distintas, horas de código y el desafío de construir desde cero una interfaz responsive y semántica usando solo HTML, CSS y JS, sin frameworks de por medio.</p>
-        <div class="contenedor">
-            <div class="contenedor-integrante">
-            
-                <a href="https://carloslovera.github.io/perfilFronted/" class="tarjeta-link" target="_blank">
-                <div class="tarjeta">
-                    <img src="img/avaterCarlos.jpg" alt="">
-                    <h2>Carlos</h2>
-                    <p>Ver perfil</p>
+                Nuestro objetivo fue diseñar una experiencia clara, moderna y responsive, permitiendo una navegación
+                sencilla
+                entre las distintas secciones y perfiles del equipo.
+            </p>
+            <button onclick="mostrarBienvenida()">Saludar</button>
+        </section>
+        <section id="proyecto">
+            <h1>Proyecto</h1>
+            <p>DevStars es una agencia web ficticia creada como parte de un trabajo práctico grupal. Nuestro objetivo es
+                diseñar y desarrollar una página web moderna, responsive y estructurada aplicando buenas prácticas de
+                desarrollo frontend.</p>
+        </section>
+
+        <section id="servicio">
+            <h1>Servicio</h1>
+
+            <div id="services-box">
+
+                <div class="servicio-item" style="--bg:url('/img/servicios/web.jpg')">
+                    <div class="overlay">
+                        <h2>Desarrollo Web</h2>
+                        <p>
+                            Creamos sitios web a medida que combinan diseño moderno, rendimiento optimizado y una
+                            experiencia de
+                            usuario fluida. Desde páginas institucionales hasta tiendas online, cada proyecto está
+                            pensado para
+                            representar tu marca y convertir visitas en resultados reales.
+                        </p>
+                    </div>
                 </div>
-                </a>
-            
-                <a href="https://portafolio-personal-beta-ten.vercel.app/" class="tarjeta-link" target="_blank">
-                <div class="tarjeta">
-                    <img src="img/avatarMaxi.png" alt="">
-                    <h2>Maximiliano</h2>
-                    <p>Ver perfil</p>
+
+                <div class="servicio-item" style="--bg:url('/img/servicios/ux.jpg')">
+                    <div class="overlay">
+                        <h2>Diseño UX/UI</h2>
+                        <p>
+                            Diseñamos experiencias digitales intuitivas que guían al usuario de forma natural.
+                            Analizamos
+                            comportamientos, estructuramos interfaces y creamos prototipos funcionales que
+                            equilibran
+                            estética y
+                            usabilidad para lograr productos claros, eficientes y atractivos.
+                        </p>
+                    </div>
                 </div>
-                </a>
-            
-                <a href="https://portafolio-karina-pfo-1.vercel.app/" class="tarjeta-link" target="blank">
-                <div class="tarjeta">
-                    <img src="img/avatarKarina.jpg" alt="">
-                    <h2>Karina</h2>
-                    <p>Ver perfil</p>
+
+                <div class="servicio-item" style="--bg:url('/img/servicios/design.jpg')">
+                    <div class="overlay">
+                        <h2>Diseño Gráfico</h2>
+                        <p>
+                            Desarrollamos identidades visuales que comunican con fuerza y coherencia. Desde
+                            logotipos
+                            hasta
+                            piezas digitales y publicitarias, trabajamos cada detalle para que tu marca tenga
+                            presencia,
+                            personalidad y reconocimiento en cualquier entorno.
+                        </p>
+                    </div>
                 </div>
-                </a>
-            
-                <a href="https://pfo-1-ivanna-de-rodt.vercel.app/" class="tarjeta-link" target="blank">
-                <div class="tarjeta">
-                    <img src="img/avatarIvanna.png" alt="">
-                    <h2>Ivanna</h2>
-                    <p>Ver perfil</p>
+
+                <div class="servicio-item" style="--bg:url('/img/servicios/mant.jpg')">
+                    <div class="overlay">
+                        <h2>Mantenimiento Web</h2>
+                        <p>
+                            Nos encargamos del mantenimiento continuo de tu sitio para que funcione de forma segura,
+                            rápida y
+                            sin interrupciones. Realizamos actualizaciones, optimizaciones y soporte técnico para
+                            que
+                            vos puedas
+                            enfocarte en tu negocio sin preocupaciones.
+                        </p>
+                    </div>
                 </div>
-                </a>
+
             </div>
-        
-    </section>
-    
-    <section id="bitacora">
-        <h1>Bitácora</h1>
-    </section>
-</main>
+        </section>
 
-<!-- FOOTER -->
-<footer style="text-align:center; padding:20px; color:white;">
-    <p>© 2026 DevStars - Proyecto Web</p>
-</footer>
+        <section id="integrantes">
+            <h1 class="seccion-titulo">Integrantes</h1>
+            <p class="seccion-subtitulo">Somos cuatro estudiantes de la Tecnicatura Superior en Desarrollo de Software
+                del IFTS N.°29, Buenos Aires. La presente pagina es nuestro primer proyecto en equipo. Detrás de cada
+                sección hay cuatro perspectivas distintas, horas de código y el desafío de construir desde cero una
+                interfaz responsive y semántica usando solo HTML, CSS y JS, sin frameworks de por medio.</p>
+            <div class="contenedor">
+                <div class="contenedor-integrante">
+
+                    <a href="https://carloslovera.github.io/perfilFronted/" class="tarjeta-link" target="_blank">
+                        <div class="tarjeta">
+                            <img src="img/avaterCarlos.jpg" alt="">
+                            <h2>Carlos</h2>
+                            <p>Ver perfil</p>
+                        </div>
+                    </a>
+
+                    <a href="https://portafolio-personal-beta-ten.vercel.app/" class="tarjeta-link" target="_blank">
+                        <div class="tarjeta">
+                            <img src="img/avatarMaxi.png" alt="">
+                            <h2>Maximiliano</h2>
+                            <p>Ver perfil</p>
+                        </div>
+                    </a>
+
+                    <a href="https://portafolio-karina-pfo-1.vercel.app/" class="tarjeta-link" target="blank">
+                        <div class="tarjeta">
+                            <img src="img/avatarKarina.jpg" alt="">
+                            <h2>Karina</h2>
+                            <p>Ver perfil</p>
+                        </div>
+                    </a>
+
+                    <a href="pages/ivanna.html" class="tarjeta-link" target="blank">
+                        <div class="tarjeta">
+                            <img src="img/avatarIvanna.png"
+                                alt="Imágen de perfil de Ivanna. Una figura en 3D tras un fondo azul, con cabello largo llevado en dos trenzas a cada costado y oscuro. Usa un sweater rojo y sonriendo amigablemente.">
+                            <h2>Ivanna</h2>
+                            <p>Ver perfil</p>
+                        </div>
+                    </a>
+                </div>
+
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer style="text-align:center; padding:20px; color:white;">
+        <p>© 2026 DevStars - Proyecto Web</p>
+    </footer>
 
     <script src="js/menu.js"></script>
 </body>
+
 </html>
