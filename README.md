@@ -109,7 +109,7 @@ Se aplicaron efectos *hover* en tarjetas para mejorar la interacción visual del
 
 ### 🖱 Javascript 
 
-* ```js
+```js
 // script_ivanna.js
 
 flipCard() // Al hacer click en cualquier lugar de la tarjeta, esta realiza una animación de "voltearse" para revelar el contenido que había detrás de ella. Varía indefinidamente entre las posiciones del frente y el dorso de dicha tarjeta.
