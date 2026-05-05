@@ -18,7 +18,7 @@ btnModo.addEventListener("click", () => {
     document.body.classList.toggle("dark");
 });
 
-// LINK ACTIVO AL SCROLL (PRO)
+// LINK ACTIVO AL SCROLL
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-links a");
 
@@ -37,5 +37,11 @@ window.addEventListener("scroll", () => {
         if (link.getAttribute("href") === "#" + current) {
             link.classList.add("active");
         }
+    });
+});
+
+document.querySelectorAll("#menuLinks a").forEach(link => {
+    link.addEventListener("click", () => {
+        menuLinks.classList.remove("show");
     });
 });
