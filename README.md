@@ -118,7 +118,7 @@ Evento "load" // Genera autoplay en caso de que no se encuentre bloqueado por el
 Evento "click" // Alterna entre "play" y "pause", con un pequeño añadido que evita que se active el "flipCard()" al hacerle click.
 ```
 
---
+---
 
 ## 🧠 Conclusión
 
